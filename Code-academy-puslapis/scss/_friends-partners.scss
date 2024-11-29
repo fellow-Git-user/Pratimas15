@@ -1,0 +1,26 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+.friends-partners-box{
+    background-color: color.$white;
+    color: color.$black;
+    padding: 0px 30px 40px 30px;
+        h2{
+        padding-bottom: 30px;
+        }
+        .wrap{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 40px 50px;
+            @include responsive.md{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            img{
+            object-fit: contain;
+            }
+        }    
+    }

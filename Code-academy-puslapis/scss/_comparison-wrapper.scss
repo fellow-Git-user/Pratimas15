@@ -1,0 +1,138 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+.comparison-wrapper{
+    background-color: color.$white;
+    color: color.$black;
+    padding-bottom: 80px;
+
+    @include responsive.md{
+        padding-top: 80px;
+    }
+    .wrap{
+        h2{
+            
+            padding-top: 57px;
+        }
+        .description{
+            padding-bottom: 18px;
+            p{}
+
+            @include responsive.md{
+            font-size: 24px;
+            padding-left: 258px;
+            word-wrap: break-word;
+            line-height: 1.35;
+            }
+        }
+        table{
+            font-size: 8px;
+            font-weight: bold;
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+            @include responsive.md{
+                margin-top: 50px;
+                font-size: 14px;
+            }
+            img{
+                width: 18px;
+                
+                
+            }
+            
+            thead{
+                tr{
+                    :first-child{
+                        text-align: left;
+                        width: 20%;
+                        text-wrap: wrap;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        @include responsive.md{
+                        width: 36%; 
+                        }
+                    }
+                    :nth-child(2){
+                        background-color: color.$blue-table-events;
+                        color: color.$white;
+                        border-radius: 5px 5px 0px 0px;
+                        border-bottom: 1px solid #594dee;
+                        @include responsive.md{
+                            padding: 21px 3px;
+                            word-wrap: break-word;
+                            -webkit-hyphens: auto;
+                            -ms-hyphens: auto;
+                            hyphens: auto;
+                            }
+                    }
+                    
+                    :nth-child(3),
+                    :nth-child(4),
+                    :nth-child(5){
+                        width: calc((100% - 20% - 27%) / 3);
+                        @include responsive.md{
+                            width: calc((100% - 36% - 14%) / 3); 
+                            }
+                    }
+
+                    th{
+                        border-bottom: 0.5px solid color.$table-row-border-grey;                            
+
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    height: 50px;
+                    text-wrap: wrap;
+                    word-wrap: break-word;
+                    :first-child{
+                        text-align: left;
+                        width: 20%;
+                        hyphens: auto;
+                        @include responsive.md{
+                            width: 36%; 
+                            }
+                    }
+                    :nth-child(2){
+                    background-color: color.$blue-table-events;
+                    color: color.$white;
+                    width: 27%;
+                    border-bottom: 1px solid #594dee;
+                    @include responsive.md{
+                    width: 14%; 
+                    }
+                    img{
+                        width: 18px;
+                        
+                        }
+                    }
+                    :nth-child(3),
+                    :nth-child(4),
+                    :nth-child(5){
+                        width: 78.32px;
+                        @include responsive.md{
+                            width: calc((100% - 36% - 14%) / 3); 
+                            }
+                        img{
+                            width: 18px;
+                            
+                            }
+                    }
+
+                    td{
+                    border-bottom: 0.5px solid color.$table-row-border-grey; 
+                        @include responsive.md{
+                        padding: 21px 3px;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

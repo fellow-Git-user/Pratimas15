@@ -1,0 +1,214 @@
+@use 'scss/color';
+@use 'scss/responsive';
+@use 'scss/base';
+@use 'scss/introduction';
+@use 'scss/join-now';
+@use 'scss/yt-video';
+@use 'scss/comparison-wrapper';
+@use 'scss/all-lecturers';
+@use 'scss/choose-path-students-review';
+@use 'scss/friends-partners';
+
+.hear-students-stories{
+    
+    
+    .wrap{
+        background-color: color.$blue-table-events;
+        color: color.$white;
+        position: relative;
+        z-index: 10;
+
+        
+        .content-h2-wrapper{
+            padding: 118px 0px 0px;
+            &::before{
+                content: '';
+                background-image: url('https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/decoration-arrows-1.svg');
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: -20;
+                width: 100%;
+                height: 50%;
+                background-size: 127% 131%;
+                background-position: -113px 0px;
+                top: 107px;
+                left: -94px;
+                transform: rotate(-13deg);
+            }
+
+            h2{
+                font-size: 50px;
+                margin-bottom: 18px;
+                @include responsive.md{
+                    max-width: 43%;
+                    font-size: 72px;
+                    line-height: 1;
+                }
+            }
+            .description{
+                p{}
+                @include responsive.md{
+                    max-width: 43%;
+                    text-align: left;
+                }
+            }
+            .button-link{
+            color: color.$black;
+            background-color: color.$white;
+            position: relative;
+            z-index: 22;
+            margin-bottom: 80px;
+
+            @include responsive.md{
+                max-width: 200px;
+                
+            }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 22;
+                bottom: 0;
+                top: 8px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.events{
+    background-color: color.$blue-table-events;
+    padding: 75px 0px 80px;
+    .wrap{
+        display: grid;
+        @include responsive.md{
+            
+        }
+        h2{
+            margin-bottom: 41px;
+        }
+        .event-container{
+            margin-bottom: 70px;
+            img{}
+            .event-location{
+                font-size: 10px;
+                letter-spacing: 1px;
+                line-height: 1.2;
+                margin-bottom: 3px;
+                text-transform: uppercase;
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+            .event-name{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 1.33;
+                p{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// @media (min-width: 768px){
+//     .container{
+//         h1{
+//             font-size: 100px;
+//             margin-bottom: 23px;
+//         }
+
+//         h2{
+//             font-family: Bw Nista Int, Arial, sans-serif;
+//             font-size: 72px;
+//             font-weight: 700;
+//             line-height: 1.33;
+//             margin: 0 0 17px;
+//         }
+//         .description{
+//             p{
+//                 font-size: 14px;
+//                 max-width: 370px;
+//             } 
+//         }
+
+//         .button-link{
+//             width: 173px;
+//             height: 40px;
+//         }
+
+//         .introduction{
+//             h2{
+//                 font-size: 24px;
+
+//             }
+//             .wrap{
+//                 .intro-content-wrapper{
+//                     max-width: 670px;
+//                     padding-bottom: 286px;
+//                     p{
+//                         font-size: 17px;
+//                     }
+                    
+//                 }
+//             } 
+//             .introduction-students-business-wrapper{
+//                 display: grid;
+//                 grid-template-columns: 50% 50%;
+//                 // grid-template-rows: 30% 30% 30%;
+//                 column-gap: 10px;
+//                 text-align: left;
+
+//                 .content-h2-wrapper{
+
+//                     &:first-of-type{
+//                     border-right: 1px solid color.$white;
+//                     padding-right: 60px;
+//                     }
+
+//                     &:nth-of-type(2){
+//                         padding-left: 60px;
+//                     }
+//                 }
+                
+                
+//             }   
+//         }
+        
+//         .join-now{
+//             h2{
+//                 font-size: 72px;
+//             }
+//             .numbers-container{
+//                 display: flex;
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 gap: 20px;
+//                     .flex-container{
+//                         display: flex;
+//                         width: 50%;
+                        
+//                     }
+//             }
+//         }
+//     }    
+    
+        
+// }
+
+
+

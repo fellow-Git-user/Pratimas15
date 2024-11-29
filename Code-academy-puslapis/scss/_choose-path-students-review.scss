@@ -1,0 +1,84 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+
+.choose-your-path-wrapper{
+    background-color: color.$blue-table-events;
+    position: relative;
+    z-index: 10;
+    .wrap{
+        padding-top: 75px;
+        &::before{
+            content: "";
+            background-image: url('https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/bracket-closing.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: -10;
+            width: 100%;
+            height: 100%;
+            background-size: 200% 200%;
+            background-position: -330px -453px;
+            top: 0px;
+            left: 0px;
+            transform: rotate(0deg);
+            
+        }
+        .content-h2-wrapper{
+            &:first-of-type{
+                margin-bottom: 75px;
+            }
+            
+            h2{
+                color: color.$white;
+                
+            }
+            .logo-and-level{}
+            h3{
+                @include responsive.md{
+                font-size: 24px;
+                line-height: 1.333;
+                }
+            }
+            .description{}
+            .button-link{
+                background-color: color.$white;
+                color: color.$black;
+                @include responsive.md{
+                    width: 170px;
+                    height: 40px;
+                }
+            }
+            img{
+                padding-top: 40px;
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: relative;
+                z-index: 22;
+                bottom: 0;
+                top: 8px;
+                left: 30px;
+            }
+        }
+    }
+}
+
+.students-reviews-wrapper{
+    background-color: color.$white;
+    padding: 80px 30px 70px;
+    .wrap{
+        padding: 70px 40px 100px 40px;
+        background-color: color.$black;
+        .lecturer-image{
+            width: 20%;
+            border-radius: 50%; 
+        }
+        .work-position{
+            color: #7b8897;
+        }
+        .description{
+        }
+    }
+}

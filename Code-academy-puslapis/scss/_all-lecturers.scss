@@ -1,0 +1,123 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+.all-lecturers{
+    background-color: color.$bc-lecturers;
+    color: color.$black;
+    padding-bottom: 52px;
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+        h2{
+        padding-top: 57px;
+        @include responsive.md{
+            grid-column-end: span 2;
+        }
+        }
+        @include responsive.md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .lecturers-wrapper{
+            background-color: color.$white;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px 40px;
+            position: relative;
+                    
+            .lecturer-image{
+                width: 30%;
+                border-radius: 50%;            
+            }
+
+            ul{
+                .profession{
+                    font-weight: bold;
+                    padding-left: 30px;
+
+                    &::before{
+                        content: "";
+                        background-image: url('https://codeacademy.lt/wp-content/uploads/2021/03/QA_w.svg');
+                        background-repeat: no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        left: 40px;
+                        background-position: 0px 0px;
+                        background-size: 25px 25px;
+                    }
+                }
+                .name-surname{
+                    font-size: 24px;
+                    font-weight: bold;
+
+                }
+                .work-position{
+
+                }
+                .link-to-linkedin-profile{
+                    img{
+                        width: 25.19px;
+                        height: 25.19px;
+                    }
+                }
+            }
+        }   
+                
+        
+    }
+
+    .button-link{
+        @include responsive.md{
+            width: 170px;
+            height: 40px;
+        }
+    }
+
+
+    .lecturers-wrapper{
+        &:nth-of-type(2),
+        &:nth-of-type(3){
+            ul{
+                .profession{
+                    &::before{
+                        background-image: url('https://codeacademy.lt/wp-content/uploads/2021/03/BigData_dark-1.svg');
+                    }
+                }   
+            }
+        }
+        &:nth-of-type(4){
+            ul{
+                .profession{
+                    &::before{
+                        background-image: url('https://codeacademy.lt/wp-content/uploads/2021/03/Net_dark-1.svg');
+                    }
+                }   
+            }
+        }
+        &:nth-of-type(5){
+            ul{
+                .profession{
+                    &::before{
+                        background-image: url('https://codeacademy.lt/wp-content/uploads/2021/03/iOS_dark-1.svg');
+                    }
+                }   
+            }
+        }
+        &:nth-of-type(6){
+            ul{
+                .profession{
+                    &::before{
+                        background-image: url('https://codeacademy.lt/wp-content/uploads/2021/05/UI_dark.svg');
+                    }
+                }   
+            }
+        }
+    }
+    
+}

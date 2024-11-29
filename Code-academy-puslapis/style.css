@@ -1,0 +1,603 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Bw Nista Int, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+h1 {
+  font-family: Bw Gradual, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 18px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+
+h2 {
+  font-family: Bw Nista Int, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.33;
+  margin: 0 0 17px;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-top: 33px;
+}
+
+.button-link {
+  display: block;
+  font-size: 10px;
+  background-color: #1200ff;
+  color: white;
+  border: 1px solid #1200ff;
+  max-width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 11px 30px 11px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.introduction {
+  padding-top: 192px;
+  position: relative;
+  z-index: 9;
+  overflow: visible;
+}
+.introduction::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/decoration-arrows.svg");
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-size: 182%;
+  background-position: -168px -18px;
+  top: 0px;
+}
+.introduction .wrap .intro-content-wrapper {
+  max-width: 315px;
+}
+@media (min-width: 768px) {
+  .introduction .wrap .intro-content-wrapper {
+    max-width: 670px;
+  }
+}
+.introduction .wrap .introduction-students-business-wrapper {
+  display: grid;
+  margin-top: 188px;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .introduction .wrap .introduction-students-business-wrapper {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    text-align: left;
+  }
+}
+.introduction .wrap .introduction-students-business-wrapper .content-h2-wrapper:first-of-type {
+  margin-bottom: 74px;
+}
+@media (min-width: 768px) {
+  .introduction .wrap .introduction-students-business-wrapper .content-h2-wrapper:first-of-type {
+    padding-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .introduction .wrap .introduction-students-business-wrapper .content-h2-wrapper:nth-of-type(2) {
+    padding-left: 60px;
+    border-left: 1px solid white;
+  }
+}
+@media (min-width: 768px) {
+  .introduction .wrap .introduction-students-business-wrapper .content-h2-wrapper h2 {
+    font-size: 24px;
+  }
+}
+.join-now {
+  padding: 74px 0px;
+  background-color: white;
+  color: black;
+}
+.join-now h2 {
+  margin-bottom: 41px;
+}
+.join-now .description p {
+  font-weight: normal;
+  color: black;
+}
+@media (min-width: 768px) {
+  .join-now .description p {
+    max-width: 470px;
+  }
+}
+.join-now .numbers-container {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .join-now .numbers-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+}
+.join-now .numbers-container .flex-container .numbers-box {
+  font-size: 100px;
+  font-weight: 600;
+}
+.join-now .numbers-container .flex-container .numbers-box.front-end-box {
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.yt-video {
+  background-color: white;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.yt-video iframe {
+  width: 100%;
+}
+
+.comparison-wrapper {
+  background-color: white;
+  color: black;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper {
+    padding-top: 80px;
+  }
+}
+.comparison-wrapper .wrap h2 {
+  padding-top: 57px;
+}
+.comparison-wrapper .wrap .description {
+  padding-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap .description {
+    font-size: 24px;
+    padding-left: 258px;
+    word-wrap: break-word;
+    line-height: 1.35;
+  }
+}
+.comparison-wrapper .wrap table {
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+.comparison-wrapper .wrap table img {
+  width: 18px;
+}
+.comparison-wrapper .wrap table thead tr :first-child {
+  text-align: left;
+  width: 20%;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table thead tr :first-child {
+    width: 36%;
+  }
+}
+.comparison-wrapper .wrap table thead tr :nth-child(2) {
+  background-color: #0f02b7;
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid #594dee;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table thead tr :nth-child(2) {
+    padding: 21px 3px;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+.comparison-wrapper .wrap table thead tr :nth-child(3),
+.comparison-wrapper .wrap table thead tr :nth-child(4),
+.comparison-wrapper .wrap table thead tr :nth-child(5) {
+  width: 17.6666666667%;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table thead tr :nth-child(3),
+  .comparison-wrapper .wrap table thead tr :nth-child(4),
+  .comparison-wrapper .wrap table thead tr :nth-child(5) {
+    width: 16.6666666667%;
+  }
+}
+.comparison-wrapper .wrap table thead tr th {
+  border-bottom: 0.5px solid #d8d8d8;
+}
+.comparison-wrapper .wrap table tbody tr {
+  height: 50px;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+.comparison-wrapper .wrap table tbody tr :first-child {
+  text-align: left;
+  width: 20%;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table tbody tr :first-child {
+    width: 36%;
+  }
+}
+.comparison-wrapper .wrap table tbody tr :nth-child(2) {
+  background-color: #0f02b7;
+  color: white;
+  width: 27%;
+  border-bottom: 1px solid #594dee;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table tbody tr :nth-child(2) {
+    width: 14%;
+  }
+}
+.comparison-wrapper .wrap table tbody tr :nth-child(2) img {
+  width: 18px;
+}
+.comparison-wrapper .wrap table tbody tr :nth-child(3),
+.comparison-wrapper .wrap table tbody tr :nth-child(4),
+.comparison-wrapper .wrap table tbody tr :nth-child(5) {
+  width: 78.32px;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table tbody tr :nth-child(3),
+  .comparison-wrapper .wrap table tbody tr :nth-child(4),
+  .comparison-wrapper .wrap table tbody tr :nth-child(5) {
+    width: 16.6666666667%;
+  }
+}
+.comparison-wrapper .wrap table tbody tr :nth-child(3) img,
+.comparison-wrapper .wrap table tbody tr :nth-child(4) img,
+.comparison-wrapper .wrap table tbody tr :nth-child(5) img {
+  width: 18px;
+}
+.comparison-wrapper .wrap table tbody tr td {
+  border-bottom: 0.5px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+  .comparison-wrapper .wrap table tbody tr td {
+    padding: 21px 3px;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+  }
+}
+
+.all-lecturers {
+  background-color: #f2f2f2;
+  color: black;
+  padding-bottom: 52px;
+}
+.all-lecturers .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.all-lecturers .wrap h2 {
+  padding-top: 57px;
+}
+@media (min-width: 768px) {
+  .all-lecturers .wrap h2 {
+    grid-column-end: span 2;
+  }
+}
+@media (min-width: 768px) {
+  .all-lecturers .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.all-lecturers .wrap .lecturers-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px 40px;
+  position: relative;
+}
+.all-lecturers .wrap .lecturers-wrapper .lecturer-image {
+  width: 30%;
+  border-radius: 50%;
+}
+.all-lecturers .wrap .lecturers-wrapper ul .profession {
+  font-weight: bold;
+  padding-left: 30px;
+}
+.all-lecturers .wrap .lecturers-wrapper ul .profession::before {
+  content: "";
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/QA_w.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 40px;
+  background-position: 0px 0px;
+  background-size: 25px 25px;
+}
+.all-lecturers .wrap .lecturers-wrapper ul .name-surname {
+  font-size: 24px;
+  font-weight: bold;
+}
+.all-lecturers .wrap .lecturers-wrapper ul .link-to-linkedin-profile img {
+  width: 25.19px;
+  height: 25.19px;
+}
+@media (min-width: 768px) {
+  .all-lecturers .button-link {
+    width: 170px;
+    height: 40px;
+  }
+}
+.all-lecturers .lecturers-wrapper:nth-of-type(2) ul .profession::before, .all-lecturers .lecturers-wrapper:nth-of-type(3) ul .profession::before {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/BigData_dark-1.svg");
+}
+.all-lecturers .lecturers-wrapper:nth-of-type(4) ul .profession::before {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/Net_dark-1.svg");
+}
+.all-lecturers .lecturers-wrapper:nth-of-type(5) ul .profession::before {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/03/iOS_dark-1.svg");
+}
+.all-lecturers .lecturers-wrapper:nth-of-type(6) ul .profession::before {
+  background-image: url("https://codeacademy.lt/wp-content/uploads/2021/05/UI_dark.svg");
+}
+
+.choose-your-path-wrapper {
+  background-color: #0f02b7;
+  position: relative;
+  z-index: 10;
+}
+.choose-your-path-wrapper .wrap {
+  padding-top: 75px;
+}
+.choose-your-path-wrapper .wrap::before {
+  content: "";
+  background-image: url("https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/bracket-closing.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-size: 200% 200%;
+  background-position: -330px -453px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+}
+.choose-your-path-wrapper .wrap .content-h2-wrapper:first-of-type {
+  margin-bottom: 75px;
+}
+.choose-your-path-wrapper .wrap .content-h2-wrapper h2 {
+  color: white;
+}
+@media (min-width: 768px) {
+  .choose-your-path-wrapper .wrap .content-h2-wrapper h3 {
+    font-size: 24px;
+    line-height: 1.333;
+  }
+}
+.choose-your-path-wrapper .wrap .content-h2-wrapper .button-link {
+  background-color: white;
+  color: black;
+}
+@media (min-width: 768px) {
+  .choose-your-path-wrapper .wrap .content-h2-wrapper .button-link {
+    width: 170px;
+    height: 40px;
+  }
+}
+.choose-your-path-wrapper .wrap .content-h2-wrapper img {
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  z-index: 22;
+  bottom: 0;
+  top: 8px;
+  left: 30px;
+}
+
+.students-reviews-wrapper {
+  background-color: white;
+  padding: 80px 30px 70px;
+}
+.students-reviews-wrapper .wrap {
+  padding: 70px 40px 100px 40px;
+  background-color: black;
+}
+.students-reviews-wrapper .wrap .lecturer-image {
+  width: 20%;
+  border-radius: 50%;
+}
+.students-reviews-wrapper .wrap .work-position {
+  color: #7b8897;
+}
+.friends-partners-box {
+  background-color: white;
+  color: black;
+  padding: 0px 30px 40px 30px;
+}
+.friends-partners-box h2 {
+  padding-bottom: 30px;
+}
+.friends-partners-box .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px 50px;
+}
+@media (min-width: 768px) {
+  .friends-partners-box .wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.friends-partners-box .wrap img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hear-students-stories .wrap {
+  background-color: #0f02b7;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.hear-students-stories .wrap .content-h2-wrapper {
+  padding: 118px 0px 0px;
+}
+.hear-students-stories .wrap .content-h2-wrapper::before {
+  content: "";
+  background-image: url("https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/decoration-arrows-1.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -20;
+  width: 100%;
+  height: 50%;
+  background-size: 127% 131%;
+  background-position: -113px 0px;
+  top: 107px;
+  left: -94px;
+  transform: rotate(-13deg);
+}
+.hear-students-stories .wrap .content-h2-wrapper h2 {
+  font-size: 50px;
+  margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .hear-students-stories .wrap .content-h2-wrapper h2 {
+    max-width: 43%;
+    font-size: 72px;
+    line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+  .hear-students-stories .wrap .content-h2-wrapper .description {
+    max-width: 43%;
+    text-align: left;
+  }
+}
+.hear-students-stories .wrap .content-h2-wrapper .button-link {
+  color: black;
+  background-color: white;
+  position: relative;
+  z-index: 22;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .hear-students-stories .wrap .content-h2-wrapper .button-link {
+    max-width: 200px;
+  }
+}
+.hear-students-stories .wrap .content-h2-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 22;
+  bottom: 0;
+  top: 8px;
+}
+
+.events {
+  background-color: #0f02b7;
+  padding: 75px 0px 80px;
+}
+.events .wrap {
+  display: grid;
+}
+.events .wrap h2 {
+  margin-bottom: 41px;
+}
+.events .wrap .event-container {
+  margin-bottom: 70px;
+}
+.events .wrap .event-container .event-location {
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+.events .wrap .event-container .event-location p {
+  margin-bottom: 0px;
+}
+.events .wrap .event-container .event-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.events .wrap .event-container .event-name p {
+  margin-top: 0px;
+}/*# sourceMappingURL=style.css.map */

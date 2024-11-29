@@ -1,0 +1,53 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+.join-now{
+    padding: 74px 0px;
+    background-color: color.$white;
+    color: color.$black;
+    h2{
+        
+        margin-bottom: 41px;
+    }
+    .description{
+        p{
+            font-weight: normal;
+            color: color.$black;
+            @include responsive.md{
+                max-width: 470px;
+            }
+        }
+    }
+    .numbers-container{
+        display: grid;
+        gap: 20px;
+
+
+        @include responsive.md {
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+
+            
+        }
+
+        .flex-container{
+            .numbers-box{
+                font-size: 100px;
+                font-weight: 600;
+                // margin-bottom: 44px;
+                
+                
+                &.front-end-box{
+                    font-size: 72px;
+                    font-weight: 600;
+                    margin-bottom: 0px; 
+                }
+                
+
+            } 
+        }
+
+        
+    }
+}

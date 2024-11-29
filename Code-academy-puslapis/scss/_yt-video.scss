@@ -1,0 +1,16 @@
+@use 'color';
+@use 'responsive';
+@use 'base';
+
+.yt-video{
+    background-color: color.$white;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+
+    iframe{
+        width: 100%;
+        
+    }
+}
